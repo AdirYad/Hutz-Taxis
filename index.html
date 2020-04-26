@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+	<link href="src/css/app.css" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+	    crossorigin="anonymous">
+	<title>חוץ - מוניות ושליחויות</title>
+</head>
+
+<body>
+	<header>
+		<button id="toggle-nav-button"><i class="fa fa-bars"></i></button>
+		<a href="/" id="logo">
+			<img src="images/Logo.png" alt="Logo">
+		</a>
+		<nav>
+			<a href="/" class="active">
+				דף הבית
+			</a>
+			<a href="/">
+				נהגים
+			</a>
+			<a href="/">
+				עסקים
+			</a>
+			<a href="/">
+				שליחויות
+			</a>
+			<a href="/">
+				אודות
+			</a>
+			<a href="/">
+				צור קשר
+			</a>
+			<a href="https://www.facebook.com/hutz.taxi/" id="facebook-link" target="_blank">
+				<i class="fab fa-facebook"></i>
+			</a>
+		</nav>
+	</header>
+
+	<main>
+		<section id="welcome">
+			<div class="container">
+				<div id="dialog">
+					<div>
+						<p>
+							צריך נסיעה? פשוט תתקשר
+						</p>
+					</div>
+					<div>
+						<a href="tel:*2224" dir="ltr">*2224</a>
+					</div>
+					<div>
+						<strong class="text-primary">
+							חוץ מוניות ושליחויות
+						</strong>
+						<span class="text-white">
+							היא חברה ותיקה באיזור השרון, עם נסיון רב ומקצועיות.
+						</span>
+					</div>
+				</div>
+				<form>
+					<h2>הזמינו מונית אונליין</h2>
+					<div class="input-container">
+						<label for="fullName"><i class="fa fa-user"></i></label>
+						<input id="fullName" type="text" name="fullname" placeholder="שם מלא" minlength="2" required>
+					</div>
+					<div class="input-container">
+						<label for="tel"><i class="fa fa-phone"></i></label>
+						<input id="tel" type="tel" name="phone" placeholder="מספר טלפון" required>
+					</div>
+					<div class="input-container">
+						<label for="startPoint"><i class="fa fa-map-marker-alt"></i></label>
+						<input id="startPoint" type="text" name="start" placeholder="איסוף" required>
+					</div>
+					<div class="input-container">
+						<label for="endPoint"><i class="fa fa-map-marked-alt"></i></label>
+						<input id="endPoint" type="text" name="finish" placeholder="יעד" required>
+					</div>
+					<div class="input-container">
+						<label for="dateAndTime"><i class="fa fa-calendar"></i></label>
+						<input id="dateAndTime" type="text" name="datetime" placeholder="תאריך ושעה" required>
+					</div>
+					<div>
+						<input type="submit" class="btn btn-primary" value="הזמן">
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
+	<script src="src/js/app.js"></script>
+</body>
+</html>
